@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="api.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="col" style="width:28%">
+            <div class="gutter">
+                <img src="" style="width:100%" id="product_img">
+            </div>
+        </div>
+        <div class="col" style="width:45%">
+            <div class="gutter">
+                <span class="label orange" id="fast_dispatch">Ready To Ship</span>
+                <span class="label peach label-join text-orange" id="in_stock"> <img src="public/icon-check.png">In Stock</span>
+                <span class="label peach label-join text-orange" id="ready_to_ship"> <img src="public/icon-check.png">Fast Dispatch</span>
+
+                <div class="clear"></div>
+
+                <p class="text-header" id="product_name">                    
+                    <span class="label grey text-grey" id="label1"> </span>
+                </p>
+
+                <div class="clear"></div>
+
+                <p class="text-p text-grey" id="reviews"></p>
+
+                <div class="clear"></div>
+                <hr>
+                <div class="clear"></div>
+
+                <p class="text-amount">
+                    R 78.50 - R 895.31 
+                    <bold class="text-grey" style="margin-left:10px; font-size:12px"> /Option</bold> 
+                    <bold class="text-dark" style="margin-left:5px; font-size:12px">2 Options</bold>
+                    <bold class="text-grey" style="margin-left:3px; font-size:12px">(Min.Order)</bold>
+                    <bold class="text-grey" style="margin-left:3px; font-size:12px"><br><strike>R98.12-R1,119.14</bold></strike>
+                </p>
+
+                <div class="clear"></div>
+                <hr>
+                <div class="clear"></div>
+
+                <div class="shipping peach">
+                    <img src="public/expo.png"/>
+                    <img src="public/arroy-right.png" style="float:right; height:17px; margin-top:13px; margin-right:13px"/>
+                </div>
+
+                <div class="clear"></div>
+
+                <p class="text-p" id="discount">
+                    
+                </p>
+
+                <div class="clear"></div>
+
+                <table id="table_options">
+                    <tr>
+                        <td style="color:grey; width:25%">Options:</td>
+                        <td style="width:25%">1080P</td>
+                        <td style="width:25%">R 833.99</td>
+                        <td>
+                            <div class="input-group mx-auto mb-0">
+                                <div class="number-input">
+                                  <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="border-right: 1px solid #c2c4c6;"></button>
+                                  <input class="quantity bg-light" min="0" placeholder="0" name="quantity" value="0" type="number">
+                                  <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" style="border-left: 1px solid #c2c4c6;"></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>4K</td>
+                        <td>R 895.99</td>
+                        <td>
+                            <div class="input-group mx-auto mb-0">
+                                <div class="number-input">
+                                  <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="border-right: 1px solid #c2c4c6;"></button>
+                                  <input class="quantity bg-light" min="0" placeholder="0" name="quantity" value="0" type="number"onblur="myFunction()">
+                                  <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" style="border-left: 1px solid #c2c4c6;"></button>
+                                </div>
+                            </div>
+                        </td>
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td></td>
+                        <td>Batteries</td>
+                        <td>R 78.99</td>
+                        <td>
+                            <div class="input-group mx-auto mb-0">
+                                <div class="number-input">
+                                  <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="border-right: 1px solid #c2c4c6;"></button>
+                                  <input class="quantity bg-light" min="0" placeholder="0" name="quantity" value="0" type="number"onblur="myFunction()">
+                                  <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" style="border-left: 1px solid #c2c4c6;"></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="clear"></div>
+
+                <p class="text-p text-grey">
+                    <span> <img src="public/lock.svg" style="height:15px;"></span>
+                    Trade Assurance
+                    <span style="font-weight:400; font-size:10px">protects your Alibab</span>
+                    <br><br>
+                    <span style="font-weight:400; font-size:10px">Payments 
+                        <img src="public/visa.svg" style="height:14px; margin-left:7px">
+                        <img src="public/master.svg" style="height:14px; margin-left:4px">
+                        <img src="public/apple.svg" style="height:14px; margin-left:4px">
+                    </span>
+                    <br><br>
+                    <span style="font-weight:400; font-size:10px">Alibaba.com Logistic</span>
+                    <span style="font-weight:400; font-size:10px; margin-left:20px">Inspection Solutions</span>
+                </p>
+            </div>
+        </div>
+        <div class="col" style="width:27%">
+            <div class="gutter">
+                <div class="card">
+                    <div class="box" id="shipping">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+  
